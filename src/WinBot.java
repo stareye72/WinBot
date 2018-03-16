@@ -29,9 +29,9 @@ public class WinBot
     throws Exception
   {
     WinBot bot = new WinBot();
-    name = IOTools.readString("Bitte geben Sie den Namen des Bots: ");
-    hostname = IOTools.readString("Bitte geben Sie den Server ein: ");
-    channel = IOTools.readString("Bitte geben Sie den channel ein: ");
+    name = IOTools.readString("Please give a name for the BOT: ");
+    hostname = IOTools.readString("Give the irc server: ");
+    channel = IOTools.readString("What Channel: ");
     bot.getConnected(hostname, name, channel);
   }
   
