@@ -43,7 +43,7 @@ public class WinBot
     if (message.matches("!time"))
     {
       String time = new Date().toString();
-      sendMessage(channel, sender + ":Die Zeit ist jetzt " + time);
+      sendMessage(channel, sender + ":The time is now " + time);
     }
     else if (message.matches("!ping"))
     {
@@ -51,19 +51,19 @@ public class WinBot
     }
     else if (message.matches("!about"))
     {
-      sendMessage(channel, sender + ":WinBot: Programmiert von Stareye, hilfe mit !hilfe");
+      sendMessage(channel, sender + ":WinBot: Code from stareye help with !help");
     }
     else if (message.matches("!google"))
     {
       sendMessage(channel, sender + "https://www.google.de");
     }
-    else if (message.matches("!hilfe"))
+    else if (message.matches("!help"))
     {
-      sendMessage(channel, sender + "Befehle: !time, !ping, !about, !hilfe, !google");
+      sendMessage(channel, sender + "Commands: !time, !ping, !about, !help, !google");
     }
     else if (message.matches("!test.*$"))
     {
-      sendMessage(channel, sender + ":Dies ist ein Test");
+      sendMessage(channel, sender + ":This is a test");
     }
     else if (message.matches(".*(http|https)://.*$"))
     {
